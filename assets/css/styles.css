@@ -3,8 +3,8 @@ body {
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 
 
   /* Typography */
@@ -58,8 +58,6 @@ html {
   background: transparent;
 }
 
-
-
 .navbar-right-custom {
   /* Box-model */
 
@@ -75,12 +73,10 @@ html {
 
 /* --------NAV END---------- */
 
-
-
 .about-me-content {
   /* Box-model */
   width: 100%;
-  padding: 5px 30px;
+  padding: 0 30px;
   vertical-align: middle;
 
   /* Positioning */
@@ -95,8 +91,7 @@ html {
   text-align: right;
   display: flex;
   flex-direction: row-reverse;
-
-
+  padding-top: 20px;
 
   /* Typography */
   font-family: 'Cutive Mono', monospace;
@@ -108,14 +103,14 @@ html {
 .about-me-content > p {
   /* Box-model */
   text-align: left;
-  padding-top: 10px;
+  padding: 15px 5px;
+
 
   /* Typography */
   font-size: 16px;
   line-height: 30px;
   color: #333;
   font-family: 'Cutive Mono', monospace;
-
 }
 
 #nate-image {
@@ -131,19 +126,21 @@ html {
 
 /* ----------------- */
 
-/* CONNECT W/ ME CSS */
+/* ----------CONNECT W/ ME CSS-##############- */
 
 /* ----------------- */
 
 #connect-with-me-area {
   width: 100%;
+  height: 95px;
 
   /* Box-model */
-  padding: 1px 30px 30px;
+  padding: 20px 30px;
 
   /* Positioning */
   text-align: right;
-  margin-top: 30px;
+  margin-top: 20px;
+
 
   /* Visual */
   background-color: #fff;
@@ -154,8 +151,9 @@ html {
   margin-bottom: 15px;
   font-family: 'Cutive Mono', monospace;
 
+
   /* Typography */
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: #555;
 }
@@ -169,7 +167,7 @@ html {
 
 #images {
   /* Box-model */
-  padding-top: 15px;
+  vertical-align: middle;
 
   /* Typography */
   text-align: center;
@@ -215,7 +213,6 @@ html {
   /* Typography */
   color: #666;
   font-family: 'Cutive Mono', monospace;
-
 }
 
 .two-toned-footer-color {
@@ -237,11 +234,11 @@ html {
   width: 100%;
 
   /* Box-model */
-  padding: 45px 10px 25px 31px;
+  padding: 15px 30px 25px 0;
 
   /* Positioning */
   text-align: right;
-  margin-top: 30px;
+  margin-top: 20px;
 
   /* Visual */
   background-color: #fff;
@@ -275,7 +272,7 @@ html {
 
 #msg {
   /* Box-model */
-  height: 200px;
+  height: 150px;
 
   /* Visual */
   border-color: #ccc;
@@ -319,11 +316,10 @@ html {
 #portfolio-area {
   /* Box-model */
   width: 100%;
-  padding: 45px 10px 25px 31px;
+  padding: 20px;
 
   /* Positioning */
-  margin-top: 30px;
-  margin-bottom: 200px;
+
 
   /* Visual */
   background-color: #fff;
@@ -337,7 +333,7 @@ html {
   /* Box-model */
   width: 200px;
   height: 200px;
-  margin-right: 15px;
+  margin: 7px;
 
   /* Positioning */
   margin-bottom: 15px;
@@ -345,13 +341,31 @@ html {
 
 /* --------END--------- */
 
-/* ----------------- */
+/* -------------------------------------------- */
 
 /* MEDIA  QUERY  CSS */
 
-/* ----------------- */
+@media only screen and (min-width: 991px) {
 
-@media only screen and (max-width: 767px) {
+  #images {
+    /* Box-model */
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  #img2 {
+    margin: 0 25px;
+  }
+
+  #img1, #img3 {
+    margin: 0;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -364,25 +378,17 @@ html {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-
   }
 
-
-
   #logo {
-  width: 100%;
+    width: 100%;
 
     /* Box-model */
     height: auto;
 
-
     /* Positioning */
     display: flex;
     justify-content: center;
-
-
-
-
 
     /* Typography */
     font-family: 'Megrim', cursive;
@@ -406,16 +412,11 @@ html {
     font-weight: lighter;
   }
 
-  .container {
-
-  }
-
   .about-me-header {
     /* Positioning */
     font-family: 'Cutive Mono', monospace;
     text-align: right;
     vertical-align: middle;
-
 
     /* Typography */
     font-size: 28px;
@@ -423,6 +424,16 @@ html {
     color: #555;
   }
 }
+
+@media only screen and (max-width: 640px) {
+
+  .navbar-header {
+    position: static;
+  }
+
+}
+
+/* ----------------- */
 
 /*****************************************************************************
 /*************-----EFFECTS----------EFFECTS----------EFFECTS-----*************
